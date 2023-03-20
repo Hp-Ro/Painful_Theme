@@ -1,0 +1,242 @@
+/**
+ * @name Hpro's Theme
+ * @description CAN U KYS PLS ?
+ * @author HpRo
+ * @version 1.0.3
+ * @authorId 490036424951988236
+ * @invite fAdGVuFh
+ */
+
+/*
+@import url("https://lavender-discord.github.io/Lavender/src/source.css");
+/* ⚠️ Main theme file — Do not remove */
+
+/* Import Theme */
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css);
+
+/* Import Font */
+@import url(https://fonts.googleapis.com/css?family=Cairo&display=swap);
+
+/* Import Chat Buble 
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/ChatBubbles.css);
+*/
+/*
+@import url(https://dablulite.github.io/redesigneduserareas/import.css);
+*/
+
+/* Discord Invite */
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/bettterInvites.css);
+
+
+
+
+/*
+@import url("https://lavender-discord.github.io/Lavender/skins/skin-loader/skin-loader.css");
+/* ⚠️ The file responsible for all the colors and skin loading */
+
+/*
+@import url("https://discordstyles.github.io/HorizontalServerList/dist/HorizontalServerList.css");
+*/
+:root {
+	--font:						Cairo;					/*	General Font				*/
+	--settingsicons:			1;						/*	Use Settings Icons in User/Server/Channel Settings: 1 = yes, 0 = no			*/
+	--accentcolor: 				88,101,242;				/*	Blurple				 - 	default:	88,101,242		 - 	hex:	#5865f2		*/
+	--accentcolor2: 			255,115,250;			/*	Boostpink			 - 	default:	255,115,250		 - 	hex:	#ff73fa		*/
+	--linkcolor: 				0,176,244;				/*	Link Color			 - 	default:	0,176,244		 - 	hex:	#00b0f4		*/
+	--mentioncolor: 			250,166,26;				/*	Highlight Color		 - 	default:	250,166,26		 - 	hex:	#faa61a		*/
+	--successcolor: 			59,165,92;				/*	Success Color		 - 	default:	59,165,92		 - 	hex:	#3ba55c		*/
+	--warningcolor: 			250,166,26;				/*	Warning Color		 - 	default:	250,166,26		 - 	hex:	#faa61a		*/
+	--dangercolor:  			237,66,69;				/*	Danger Color		 - 	default:	237,66,69		 - 	hex:	#ed4245		*/
+	--textbrightest: 			255,255,255;			/*	Text Color 1		 - 	default:	255,255,255		 - 	hex:	#ffffff		*/
+	--textbrighter: 			222,222,222;			/*	Text Color 2		 - 	default:	220,221,222		 - 	hex:	#dcddde		*/
+	--textbright: 				185,185,185;			/*	Text Color 3		 - 	default:	185,187,190		 - 	hex:	#b9bbbe		*/
+	--textdark: 				140,140,140;			/*	Text Color 4		 - 	default:	142,146,151		 - 	hex:	#8e9297		*/
+	--textdarker: 				115,115,115;			/*	Text Color 5		 - 	default:	114,118,125		 - 	hex:	#72767d		*/
+	--textdarkest: 				80,80,80;				/*	Text Color 6		 - 	default:	79,84,92		 - 	hex:	#4f545c		*/
+	--backgroundaccent: 		35,35,35;				/*	Background Accent	 - 	default:	64,68,75		 - 	hex:	#40444b		*/
+	--backgroundprimary: 		25,25,25;				/*	Background 1		 - 	default:	54,57,63		 - 	hex:	#36393f		*/
+	--backgroundsecondary: 		20,20,20;				/*	Background 2		 - 	default:	47,49,54		 - 	hex:	#2f3136		*/
+	--backgroundsecondaryalt: 	17,17,17;				/*	Background 3		 - 	default:	41,43,47		 - 	hex:	#292b2f		*/
+	--backgroundtertiary: 		17,17,17;				/*	Background 4		 - 	default:	32,34,37		 - 	hex:	#202225		*/
+	--backgroundfloating: 		0,0,0;				/*	Background Elevated	 - 	default:	24,25,28		 - 	hex:	#18191c		*/
+	 
+     /* Chat Buble 
+    --chat-bubble: 1;
+    --chat-bubble-background-color: var(--background-secondary);
+    --chat-bubble-border-color: var(--background-secondary-alt);
+    --chat-bubble-code-background-color: var(--background-secondary-alt);
+    --chat-bubble-max-width: 90%;
+    --chat-bubble-border-radius: 5px;
+    --chat-bubble-box-shadow-h-offset: 0;
+    --chat-bubble-box-shadow-v-offset: 4px;
+    --chat-bubble-box-shadow-blur: 4px;
+    --chat-bubble-box-shadow-color-h: 0;
+    --chat-bubble-box-shadow-color-s: 0%;
+    --chat-bubble-box-shadow-color-l: 0%;
+    --chat-bubble-box-shadow-color-a: 0.16;
+*/
+    --HSL-server-icon-size: 38px;  /* Size of the server icons | DEFAULT: 40px */
+    --HSL-server-spacing: 10px;  /* Spacing between each server icon | DEFAULT: 10px */
+    --HSL-server-direction: column; /* Direct of the server list. | Options: column, column-reverse | DEFAULT: column */
+}
+/* server list */
+.base-2jDfDU {
+    margin-top: 8px;
+}
+
+/* Hide Help */
+.toolbar-3_r2xA .anchor-1MIwyf {
+    display: none;
+}
+
+
+/* edited text */
+.timestamp-p1Df1m:not(.timestampInline-_lS3aK, .timestampVisibleOnHover-9PEuZS) time::after {
+        content: ""attr(aria-label)"";
+        color: var(--text-muted);
+        font-size: 0.625rem;
+        font-weight: 400;
+        line-height: 1;
+        text-transform: lowercase;
+}
+
+.edited-1v5nT8:not(.message-translate-indicator) {
+    display: none;
+}
+
+/* Rounded Context Menu */
+.menu-1QACrS, .colorDefault-CDqZdO { 
+    border-radius: 5px; 
+}
+
+
+
+
+
+/*Discord connections
+.userInfoSection-3her-v>h3 {
+   color: var(--header-secondary);
+   margin-top: 20x;   
+}*/
+
+
+/*vc*/
+.panels-3wFtMD {
+  margin-right: 3px;
+  margin-bottom: 3px;
+  margin-left: 3px;
+  border: 1px solid var(--background-secondary);
+  border-radius: 15px;
+  box-shadow: 0 0 3px 1px rgb(0, 0, 0,0.5);
+}
+
+
+/* popup user 1*/
+.userPopout-2j1gM4 .avatarWrapperNormal-ahVUaC{
+    left:50%;
+    transform:translateX(-50%)
+}
+/*avatar background border*/
+.headerWrapper-3iTlIT > div.headerNormal-3Zn_yu > svg > mask > circle {
+    cx: 150;
+}
+/* badges */
+.userPopout-2j1gM4 .profileBadges-2pItdR {
+    display: flex;
+    position: relative;
+    justify-self: center;
+    justify-content: center;
+    max-width: 100%;
+    padding: 3px;
+    right: 0px;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    margin-top: -15px;
+}
+/*user name*/
+.userPopout-2j1gM4 .headerText-1-WmDq {
+    margin: -15px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* avatar 2*/
+.headerWrapper-3iTlIT > .avatarWrapperNonUserBot-2LumL4.avatarWrapper-eenWra.avatarPositionNormal-2jWoC2.clickable-GKg4Qy > div > div > svg {
+    left: 100%;
+    transform: translateX(10%);
+}
+
+#popout_2080 > div > div > div.headerTop-3GPUSF > svg
+
+
+/* popup user 2*/
+.body-1Ukv50 .headerTop-1PNKck .badgeList-2aoHPw.container-1gYwHN, .topSection-13QKHs .headerTop-1PNKck .badgeList-2aoHPw.container-1gYwHN {
+    position: fixed;
+    left: 15px;
+    transform: translateY(20px);
+    max-width: 200px;
+    padding: 3px;
+}
+/* avatar */
+.avatar-3QF_VA {
+    left:50%;
+    transform:translateX(-50%)
+}
+/* avatar background border*/
+.root-8LYsGj .bannerSVGWrapper-qc0szY > mask > circle {
+    cx: 300;
+}
+/*badged and button*/
+.body-1Ukv50 .headerTop-1PNKck .relationshipButtons-3ByBpj, .topSection-13QKHs .headerTop-1PNKck .relationshipButtons-3ByBpj {
+    position: fixed;
+    right: 15px;
+    transform: translateY(15px);
+}
+/*button */
+.lookFilled-yCfaCM.colorGreen-3y-Z79 {
+    border-radius: 5px;
+}
+/* Accounts */
+.connectedAccountContainer-3aLMHJ {
+    border-radius: 5px;
+    background-color: #000000;
+    box-shadow: 0 0 3px 1px rgb(69 69 69 / 50%);
+}
+
+
+#app-mount .userPopout-2j1gM4, #app-mount .userPopout-3fydSP, #app-mount .userPopout-29jUdN, #app-mount .menu-1QACrS { 
+    box-shadow: 0 0 3px 1px rgb(69 69 69 / 50%);
+    border-radius: 5px;
+}
+
+
+/* buttons */
+.button-f2h6uQ {
+    border-radius: 5px;
+}
+
+
+.wordmarkWindows-2dq6rw svg {
+    display:none;
+}
+.wordmarkWindows-2dq6rw::after {
+    content: 'Discord';
+    font-family: 'Ginto Nord';
+    font-size: 10.10px;
+    font-weight: 700;
+    top:4px;
+    left: 3px;
+    position: relative;
+}
+
+
+/* Bar */
+.videoControls-2NzHnF {
+    width: auto;
+    margin: 15px;
+    padding-bottom: 0px;
+    border-radius: 5px;
+}
+.wrapperControlsHidden-2BK8R2 .videoControls-2NzHnF{
+    margin-bottom: 0;
+  }
